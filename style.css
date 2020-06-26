@@ -1,0 +1,39 @@
+@font-face {
+font-family: "spaceFont";
+src: url("./assets/8-bit-pusab.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #252525;
+  font-family: spaceFont;
+}
+canvas {
+  position: absolute;
+  display: block;
+  bottom: 10%
+}
+
+.header{
+  position: absolute;
+  top: 10%;
+  color: rgb(168, 50, 166);
+  text-shadow: -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;
+}
+
+.header .score{
+  padding: 20px;
+}
