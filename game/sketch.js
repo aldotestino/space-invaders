@@ -53,7 +53,7 @@ function keyReleased() {
 }
 
 function draw() {
-  frameRate(10);
+  //frameRate(10);
   //background(0);
   imageMode(CORNER);
   image(bg, 0, 0, 1000, 600);
