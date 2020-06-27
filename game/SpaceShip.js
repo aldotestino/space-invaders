@@ -36,7 +36,7 @@ class SpaceShip {
   }
 
   shoot() {
-    playerShoot.play();
+    //playerShoot.play();
     this.lasers.push(new Laser(this.pos.x));
   }
 }
