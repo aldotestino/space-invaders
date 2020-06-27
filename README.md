@@ -8,4 +8,4 @@
 - [x] Memory optimization
 - [x] Moving enemies
 - [x] Modern icons
-- [] Sound effects
+- [ ] Sound effects
