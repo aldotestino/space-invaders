@@ -20,8 +20,6 @@ function preload() {
   pelpImage = loadImage('./assets/pelp.png');
   enemieImage = loadImage('./assets/enemie.png');
   spaceshipImage = loadImage('./assets/spaceship.png');
-  //invaderKilled = loadSound('./assets/invaderKilled.mp3');
-  //playerShoot = loadSound('./assets/shoot.mp3');
   scoreText = document.querySelector(".score");
   bg = loadImage('./assets/bg.png');
 }
@@ -74,7 +72,6 @@ function draw() {
   for (let i = spaceship.lasers.length - 1; i >= 0; i--) {
     for (let j = enemies.length - 1; j >= 0; j--) {
       if (spaceship.lasers[i].hits(enemies[j])) {
-        //invaderKilled.play();
         score++;
         enemies.splice(j, 1);
         spaceship.lasers.splice(i, 1);

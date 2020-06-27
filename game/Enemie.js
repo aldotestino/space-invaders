@@ -1,5 +1,5 @@
 class Enemie {
-    constructor(x,y) {
+    constructor(x, y) {
         this.pos = createVector(x, y);
     }
 
@@ -11,8 +11,8 @@ class Enemie {
         //image(pelpImage, this.pos.x, this.pos.y, 100, 100);
     }
 
-    move(xVel,yVel) {
-      this.pos.x += xVel;
-      this.pos.y += yVel;
+    move(xVel, yVel) {
+        this.pos.x += xVel;
+        this.pos.y += yVel;
     }
 }
