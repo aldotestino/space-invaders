@@ -20,8 +20,8 @@ function preload() {
   pelpImage = loadImage('./assets/pelp.png');
   enemieImage = loadImage('./assets/enemie.png');
   spaceshipImage = loadImage('./assets/spaceship.png');
-  invaderKilled = loadSound('./assets/invaderKilled.wav');
-  playerShoot = loadSound('./assets/shoot.wav');
+  invaderKilled = loadSound('./assets/invaderKilled.mp3');
+  playerShoot = loadSound('./assets/shoot.mp3');
   scoreText = document.querySelector(".score");
   bg = loadImage('./assets/bg.png');
 }
