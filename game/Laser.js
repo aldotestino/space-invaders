@@ -1,6 +1,6 @@
 class Laser {
     constructor(pos) {
-        this.pos = createVector(pos, height-105);
+        this.pos = createVector(pos, height - 105);
     }
 
     update() {
@@ -8,7 +8,7 @@ class Laser {
     }
 
     render() {
-        stroke(168,50,166);
+        stroke(168, 50, 166);
         strokeWeight(3);
         line(this.pos.x, this.pos.y, this.pos.x, this.pos.y - 40);
     }
@@ -23,7 +23,7 @@ class Laser {
 
     hits(enemie) {
         if (this.pos.x >= enemie.pos.x - 50 && this.pos.x <= enemie.pos.x + 50) {
-            if (this.pos.y - 40 <= enemie.pos.y + 30) {
+            if (this.pos.y - 40 <= enemie.pos.y + 30 && this.pos.y >= enemie.pos.y - 30) {
                 return true;
             }
         }
